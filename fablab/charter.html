@@ -76,39 +76,26 @@
 			</nav>
 		</header>
 		<main role="main">
-			<article class="article container">
+			{% extends "base.html" %}
+{% block title %}Хартия{% endblock %}
+{% block content %}
+<article class="article container">
 	<div class="content">
-		<div class="row">
-			<div class="col-md-8">
-				<h2>Фаблаб МИСиС&nbsp;&mdash; первый Российский фаблаб</h2>
-				<address>
-					Москва, метро Октябрьская, Крымский вал 3. Открыты Ср&nbsp;&mdash; Чт: 11:00&nbsp;&mdash; 18:00.
-				</address>
-				<div class="fotorama" data-width="100%" data-height="420" data-loop="true" data-allowfullscreen="true">
-					<a href="http://vimeo.com/85431489"></a>
-					<img src="/img/slider/bot.jpg">
-					<img src="/img/slider/cardboard.jpg">
-					<img src="/img/slider/grid.jpg">
-					<img src="/img/slider/pcb.jpg">
-					<img src="/img/slider/plywood.jpg">
-					<img src="/img/slider/thing1.jpg">
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div id="fb-root"></div>
-				<script>(function(d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) return;
-					js = d.createElement(s); js.id = id;
-					js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
-				<div class="fb-like-box" data-href="https://www.facebook.com/fablab77" data-width="355" data-colorscheme="dark" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
-			</div>
-		</div>
+		<h2>Хартия</h2>
+		<p><strong>Миссия:</strong> фаблабы&nbsp;&mdash; это всемирная сеть лабораторий цифрового производства, созданная для того, чтобы позволить каждому создавать всё что он&nbsp;пожелает при помощи современных цифровых технологий.</p>
+		<p><strong>Назначение:</strong> в&nbsp;фаблабе можно создавать всё что пожелаете, главное&nbsp;&mdash; чтобы Ваше изделие не&nbsp;представляло угрозы для жизни человека. Вы&nbsp;должны уметь самостоятельно работать в&nbsp;лаборатории, а&nbsp;также не&nbsp;забывать, что помимо Вас в&nbsp;лаборатории работают другие коллеги.</p>
+		<p><strong>Обучение:</strong> образовательный процесс в&nbsp;фаблабах заключается в&nbsp;выполнении практических заданий. В&nbsp;основе образовательного процесса в&nbsp;фаблабе лежат продуктивное общение с&nbsp;однокашниками и&nbsp;непрерывный взаимополезный обмен опыта с&nbsp;ними. Каждый должен стремиться привносить свой вклад в&nbsp;развитие образовательного процесса и&nbsp;помогать окружающим обучаться работе с&nbsp;оборудованием в&nbsp;лаборатории.</p>
+		<p><strong>Ответственность:</strong> не&nbsp;забывайте, что Вы&nbsp;несёте ответственность за:</p>
+		<p><i>Безопасность:</i> при выполнении любого вида работ в&nbsp;фаблабе не&nbsp;забывайте о&nbsp;собственной безопасности и&nbsp;о&nbsp;безопасности окружающих Вас людей</p>
+		<p><i>Чистоту:</i> закончив работать в&nbsp;фаблабе, не&nbsp;забудьте убрать за&nbsp;собой рабочее место</p>
+		<p><i>Функционирование оборудования:</i> поддерживайте оборудование в&nbsp;рабочем состоянии, ремонтируйте его в&nbsp;случае поломки, а&nbsp;также сообщайте о&nbsp;случаях неисправной работы устройств или их&nbsp;частей</p>
+		<p><strong>Конфиденциальность:</strong> технологии и&nbsp;процессы, создаваемые в&nbsp;ходе работы в&nbsp;фаблабе, должны оставаться общедоступными, однако Вы&nbsp;вправе защищать права своей интеллектуальной собственности.</p>
+		<p><strong>Коммерциализация:</strong> технологические разработки фаблаба могут быть коммерциализированы, однако не&nbsp;стоит забывать, что один из&nbsp;основополагающих принципов работы фаблаба&nbsp;&mdash; свободный доступ ко&nbsp;всем её ресурсам. Коммерческая деятельность должна развиваться не&nbsp;столько внутри самой лаборатории, сколько вне её, тем самым способствуя процветанию всей сети лабораторий, а&nbsp;также успеху разработчиков.</p>
+		<p class="text-right">Проект документа от&nbsp;30 августа 2009</p>
+		<p class="text-right"><a href="http://fab.cba.mit.edu/about/charter/" target="_blank">Оригинальный текст</a></p>
 	</div>
 </article>
-
+{% endblock %}
 		</main>
 		<footer class="footer">
 			<div class="container">
