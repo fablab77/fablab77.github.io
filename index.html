@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>{% block title %}{% endblock %}</title>
+		<link href="/static/css/bootstrap.css" rel="stylesheet">
+		<link href="/static/js/vendor/fotorama/fotorama.css" rel="stylesheet">
+		<link href="/static/js/vendor/fileupload/css/jquery.fileupload.css" rel="stylesheet">
+		<link href="/static/css/screen.css" rel="stylesheet">
+		<link rel="icon" href="/static/img/favicon.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header class="header">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="/"><img src="/static/img/logos/fablab.png" alt="Фаблаб Москва"></a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex8-collapse">
+							<span class="navbar-header-button-text">Навигация</span>
+							<div class="navbar-header-button-icon">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</div>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex8-collapse">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Фаблаб <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="/fablab/index">Что Это?</a></li>
+									<li><a href="/fablab/wherefrom">Откуда</a></li>
+									<li><a href="/fablab/charter">Хартия</a></li>
+									<li><a href="/fablab/network">Всемирная сеть</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Оборудование <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="/equipment">Список оборудования</a></li>
+									<li><a href="/equipment/dimention-elite">Профессиональный 3D принтер</a></li>
+									<li><a href="/equipment/3dtouch-3d-printer">3D Touch 3D принтер</a></li>
+									<li><a href="/equipment/replicator">3D принтер Replicator</a></li>
+									<li><a href="/equipment/formlabs-form-1">3D принтер Formlabs</a></li>
+									<li><a href="/equipment/flexicam-stealth">Большой фрезерный станок</a></li>
+									<li><a href="/equipment/mtm-snap">Фрезерный станок MTM Snap</a></li>
+									<li><a href="/equipment/milling-machine">Настольные фрейзерные ЧПУ</a></li>
+									<li><a href="/equipment/roland-modella-mdx-20">Гравировально-фрезерная машина</a></li>
+									<li><a href="/equipment/dremel-3000">Ручная шлифовальная машина</a></li>
+									<li><a href="/equipment/press-schulze">Пресс для термопереноса</a></li>
+									<li><a href="/equipment/fiac-dryer">Воздушный компрессор</a></li>
+									<li><a href="/equipment/laser-epilog-mini">Лазерный раскройщик Laser Epilog Mini 24</a></li>
+									<li><a href="/equipment/laser-pro-spirit">Лазерный раскройщик Laser Pro Spirit</a></li>
+									<li><a href="/equipment/roland-modella-mdx-540">Презиционный станок</a></li>
+									<li><a href="/equipment/roland-gx300-gx24">Режущий плоттер</a></li>
+									<li><a href="/equipment/drilling-machine">Сверлильный станок</a></li>
+									<li><a href="/equipment/soldering-station">Паяльная станция</a></li>
+									<li><a href="/equipment/thermostatic-basin">Thermostatic basin</a></li>
+									<li><a href="/equipment/grinder">Точильный станок</a></li>
+									<li><a href="/equipment/instek">Осциллограф</a></li>
+								</ul>
+							</li>
+							<li><a href="http://www.thingiverse.com/search?q=fablab77" target="_blank">Проекты</a></li>
+							<li><a href="/access">Доступ</a></li>
+							<li><a href="/events">События</a></li>
+							<li><a href="/contacts">Контакты</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="http://web.mit.edu/" target="_blank"><img src="/static/img/logos/mit.png" alt="MIT" height="18"></a></li>
+							<li><a href="http://www.misis.ru/" target="blank"><img src="/static/img/logos/misis.png" alt="Moscow Institute of Steel and Alloys" height="18"></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main role="main">
+<article class="article container">
+	<div class="content">
+		<address class="row">
+			<div class="col-md-6">
+				<h2>Контакты</h2>
+				<h3>Мы находимся на территории МИСиС:</h3>
+				<p>г. Москва, м. Октябрьская, Крымский вал 3</p>
+				<h3>Руководитель:</h3>
+				<p>Владимир Кузнецов&nbsp;&mdash; <a href="mailto:fablab@misis.ru">fablab@misis.ru</a></p>
+				<h3>Часы работы:</h3>
+				<p>Ср&nbsp;&mdash; Чт: 11:00&nbsp;&mdash; 18:00<br>
+				Телефон: <nobr>8 (495) 955-01-20</nobr></p>
+			</div>
+			<div class="col-md-6">
+				<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=gdcMrFGswe81oTlJu1RvQuWvKtF11xao&width=545&height=450"></script>
+			</div>
+		</address>
+	</div>
+</article>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="text-center">
+					&laquo;ФабЛаб&raquo; &copy;&nbsp;2012<br>
+					Информация данного Интернет-сайта защищена законом об авторских правах.
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="/static/js/vendor/fotorama/fotorama.js"></script>
+</html>
