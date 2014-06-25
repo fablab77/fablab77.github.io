@@ -5,12 +5,11 @@
 		<title>Фаблаб Москва</title>
 		<link href="/css/bootstrap.css" rel="stylesheet">
 		<link href="/js/vendor/fotorama/fotorama.css" rel="stylesheet">
-		<link href="/js/vendor/fileupload/css/jquery.fileupload.css" rel="stylesheet">
 		<link href="/css/screen.css" rel="stylesheet">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	<body>
+	<body class="index">
 		<header class="header">
 			<nav class="navbar navbar-default" role="navigation">
 				<div class="container">
@@ -62,6 +61,16 @@
 									<li><a href="/equipment/instek.html">Осциллограф</a></li>
 								</ul>
 							</li>
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Наше творчество<span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="/creativity/2d.html">2D</a></li>
+									<li><a href="/creativity/3d.html">3D</a></li>
+									<li><a href="/creativity/2d-3d.html">Из 2D в 3D</a></li>
+									<li><a href="/creativity/electronics.html">Электроника</a></li>
+									<li><a href="/creativity/large.html">По крупному</a></li>
+								</ul>
+							</li>
 							<li><a href="http://www.thingiverse.com/search?q=fablab77" target="_blank">Проекты</a></li>
 							<li><a href="/access.html">Доступ</a></li>
 							<li><a href="/events.html">События</a></li>
@@ -76,39 +85,102 @@
 			</nav>
 		</header>
 		<main role="main">
-			<article class="article container">
-	<div class="content">
-		<div class="row">
-			<div class="col-md-8">
-				<h2>Фаблаб МИСиС&nbsp;&mdash; первый Российский фаблаб</h2>
-				<address>
-					Москва, метро Октябрьская, Крымский вал 3. Открыты Ср&nbsp;&mdash; Чт: 11:00&nbsp;&mdash; 18:00.
-				</address>
-				<div class="fotorama" data-width="100%" data-height="420" data-loop="true" data-allowfullscreen="true">
-					<a href="http://vimeo.com/85431489"></a>
-					<img src="/img/slider/bot.jpg">
-					<img src="/img/slider/cardboard.jpg">
-					<img src="/img/slider/grid.jpg">
-					<img src="/img/slider/pcb.jpg">
-					<img src="/img/slider/plywood.jpg">
-					<img src="/img/slider/thing1.jpg">
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div id="fb-root"></div>
-				<script>(function(d, s, id) {
-					var js, fjs = d.getElementsByTagName(s)[0];
-					if (d.getElementById(id)) return;
-					js = d.createElement(s); js.id = id;
-					js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));</script>
-				<div class="fb-like-box" data-href="https://www.facebook.com/fablab77" data-width="355" data-colorscheme="dark" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
-			</div>
-		</div>
-	</div>
-</article>
+			<section class="fotorama" data-width="100%" data-height="100%" data-loop="true" data-fit="cover" data-nav="false">
+	<a href="http://vimeo.com/85431489"></a>
+	<img src="/img/slider/bot.jpg">
+	<img src="/img/slider/cardboard.jpg">
+	<img src="/img/slider/grid.jpg">
+	<img src="/img/slider/pcb.jpg">
+	<img src="/img/slider/plywood.jpg">
+	<img src="/img/slider/thing1.jpg">
+	<img src="/img/slider/1.jpg">
+	<img src="/img/slider/2.jpg">
+	<img src="/img/slider/3.jpg">
+	<img src="/img/slider/4.jpg">
+	<img src="/img/slider/5.jpg">
+	<img src="/img/slider/6.jpg">
+	<img src="/img/slider/7.jpg">
+	<img src="/img/slider/8.jpg">
+	<img src="/img/slider/1.jpg">
+	<img src="/img/slider/10.jpg">
+	<img src="/img/slider/11.jpg">
+	<img src="/img/slider/12.jpg">
+	<img src="/img/slider/13.jpg">
+	<img src="/img/slider/14.jpg">
+	<img src="/img/slider/15.jpg">
+	<img src="/img/slider/16.jpg">
+	<img src="/img/slider/17.jpg">
+</section>
 
+<div class="flex">
+	<article class="article">
+		<div class="top-article">
+			<h2>История появления Fablab</h2>
+			<img class="pull-left" src="/img/photo/neil.jpg">
+			<p class="text-justify">
+				В&nbsp;конце прошлого века в&nbsp;одном из&nbsp;ведущих технических
+				университетов мира&nbsp;&mdash; Массачусетском технологическом институте(MIT), профессор Нил Гершенфельд с&nbsp;коллегами начал читать курс, с не&nbsp;совсем академическим названием &laquo;Как сделать (почти) все, что угодно&raquo;. В&nbsp;рамках дисциплины студентов знакомили с&nbsp;современными цифровыми производственными машинами&nbsp;&mdash; с&nbsp;их&nbsp;возможностями и ограничениями. Студентов знакомили с&nbsp;современными технологиями
+				и&nbsp;предлагали реализовывать с&nbsp;их&nbsp;помощью собственные проекты.<br>
+				Всего за&nbsp;один семестр магистранты с&nbsp;самым различным образованием
+				и&nbsp;опытом успевали освоить несколько методов обработки материалов,
+				изготовление печатных плат и&nbsp;программирование
+				микроконтроллеров, создавая в&nbsp;итоге оригинальные функциональные
+				продукты. Курс вызвал огромный интерес как внутри университета,
+				так и&nbsp;далеко за&nbsp;его пределами, и&nbsp;очень быстро стало понятно, что
+				подобный сплав современного доступного оборудования, открытого
+				программного обеспечения и&nbsp;демократичных методов преподавания
+				заслуживает стать чем-то значительно большим, чем просто часть
+				академической программы одного, пусть даже и&nbsp;лучшего в&nbsp;мире,
+				технического университета. Таким образом, Центр битов и&nbsp;атомов,
+				возглавляемый Нилом Гершенфельдом, запустил программу развития
+				сети лабораторий цифрового производства Fab&nbsp;Lab, которая очень
+				скоро стала глобальным международным проектом.
+			</p>	
+		</div>
+		<hr>
+		<div class="bottom-article">
+			<h2>Фаблаб МИСиС&nbsp;&mdash; первый Российский фаблаб</h2>
+			<address>
+				Москва, метро Октябрьская, Крымский вал 3. Открыты: ср, чт: 11:00&nbsp;&mdash; 18:00.
+			</address>
+			<img class="pull-left" src="/img/photo/russian-fablab.jpg">
+			<p class="text-justify">
+				Каждая лаборатория, по&nbsp;сути, является облегченной версией Центра битов и&nbsp;атомов и&nbsp;дает своим пользователям возможность научиться	тому, как сделать (почти) все. На&nbsp;сегодняшний момент в&nbsp;мире насчитывается порядка 200&nbsp;лабораторий, объединенных сетевым взаимодействием, дающим возможности обмена идеями и цифровыми ресурсами и&nbsp;совместной работы над проектами.<br>
+				Первая полнофункциональная лаборатория формата Fab&nbsp;Lab в&nbsp;России
+				открылась в&nbsp;апреле 2012 года в&nbsp;НИТУ &laquo;МИСиС&raquo;, в&nbsp;рамках совместного
+				проекта с&nbsp;MIT при поддержке Департамента образования&nbsp;г. Москвы.<br>
+				Каждая лаборатория проекта располагает унифицированным
+				комплектом основного цифрового оборудования (фрезерный станок с
+				большим рабочим полем, устройство лазерной резки, прецизионный
+				настольный фрезерный станок, 3D&nbsp;принтер, режущий плоттер),
+				использует стандартную элементную базу электронных компонентов
+				и&nbsp;разделяет общую идеологию открытого проекта, зафиксированную
+				в&nbsp;&laquo;хартии&raquo; Fab&nbsp;Lab.<br>
+			</p>
+			<p class="text-right">
+				<b>
+					Мы приглашаем всех желающих становится нашими соавторами.<br>
+					Мир идей и&nbsp;решений Fab&nbsp;Lab безграничен! <br>Добро пожаловать!
+				</b>
+			</p>
+			<p class="text-right text-muted">
+				Команда лаборатории цифрового<br> 
+				производства &laquo;ФАБЛАБ&raquo; НИТУ &laquo;МИСиС&raquo;
+			</p>
+		</div>
+	</article>
+	<aside class="aside">
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="fb-like-box" data-href="https://www.facebook.com/fablab77" data-width="355" data-height="1085" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>
+	</aside>
+</div>
 		</main>
 		<footer class="footer">
 			<div class="container">
@@ -122,4 +194,6 @@
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="/js/vendor/fotorama/fotorama.js"></script>
+	<!-- // <script src="/js/jquery.pin.js"></script> -->
+	<script src="/js/all.js"></script>
 </html>
