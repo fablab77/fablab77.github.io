@@ -1543,7 +1543,7 @@ hr {
     background-position: 0px;
     transition: background-position 2s ease; }
   .footer:hover::before {
-    background-position: 200px;
+    background-position: 500px;
     transition: background-position 2s ease; }
 
 .index .header {
