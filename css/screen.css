@@ -1568,17 +1568,12 @@ hr {
     height: 300px;
     width: auto; }
 
-.creativity {
-  background: white;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  padding: 10px 20px; }
-  .creativity .image {
-    width: 400px; }
-    .creativity .image img {
-      margin-bottom: 5px; }
-  .creativity h2 {
-    margin-bottom: 20px; }
+.creativity .image {
+  width: 400px; }
+  .creativity .image img {
+    margin-bottom: 5px; }
+.creativity h2 {
+  margin-bottom: 20px; }
 
 .residents dl dt {
   width: auto;
