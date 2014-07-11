@@ -1460,30 +1460,23 @@ main {
   -ms-flex: 1;
   flex: 1; }
 
-  body p {
-    font-size: 16px; }
-
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0 !important; }
 
+p {
+  font-size: 16px; }
+
 .header {
-  border-bottom: 1px solid #663399;
+  border-bottom: 1px solid #777777;
   margin-bottom: 30px; }
   .header .navbar {
     margin-bottom: 0; }
-
-.index .header {
-  position: absolute;
-  z-index: 5000;
-  width: 100vw;
-  border-bottom: none;
-  margin-bottom: 0; }
-  .index .header .navbar-default .navbar-nav > .open > a, .index .header .navbar-default .navbar-nav > .open > a:hover, .index .header .navbar-default .navbar-nav > .open > a:focus {
-    background-color: rgba(102, 51, 153, 0.22); }
-  .index .header .dropdown-menu {
+  .header .navbar-default .navbar-nav > .open > a, .header .navbar-default .navbar-nav > .open > a:hover, .header .navbar-default .navbar-nav > .open > a:focus {
+    background-color: rgba(0, 0, 0, 0.15); }
+  .header .dropdown-menu {
     background: rgba(255, 255, 255, 0.8); }
-  .index .header .dropdown-menu > li > a:hover, .index .header .dropdown-menu > li > a:focus {
-    background-color: rgba(102, 51, 153, 0.22); }
+  .header .dropdown-menu > li > a:hover, .header .dropdown-menu > li > a:focus {
+    background-color: rgba(0, 0, 0, 0.15); }
 
 .navbar {
   background: rgba(255, 255, 255, 0.8);
@@ -1509,6 +1502,72 @@ h1, h2, h3, h4, h5, h6 {
 .fbook {
   background: white; }
 
+.article {
+  background: white;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+  .article img {
+    margin-bottom: 15px;
+    width: 38%; }
+    .article img.pull-left {
+      margin-right: 15px; }
+    .article img.pull-right {
+      margin-left: 15px; }
+  .article textarea {
+    resize: none; }
+
+hr {
+  border-top: 1px solid #777777;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.fotorama {
+  margin-bottom: 20px; }
+
+.footer {
+  padding: 55px 0 30px;
+  margin-top: 40px;
+  background: #dedede;
+  position: relative; }
+  .footer::before {
+    position: absolute;
+    content: "";
+    pointer-events: none;
+    left: 0;
+    background-size: 200px 100%;
+    top: 0;
+    width: 100%;
+    height: 29px;
+    background-size: 65px 100%;
+    background-image: linear-gradient(40deg, #dedede 50%, #ffffff 50%);
+    background-position: 0px;
+    transition: background-position 2s ease; }
+  .footer:hover::before {
+    background-position: 200px;
+    transition: background-position 2s ease; }
+
+.index .header {
+  position: absolute;
+  z-index: 5000;
+  width: 100vw;
+  border-bottom: none;
+  margin-bottom: 0; }
+  .index .header .navbar-default .navbar-nav > .open > a, .index .header .navbar-default .navbar-nav > .open > a:hover, .index .header .navbar-default .navbar-nav > .open > a:focus {
+    background-color: rgba(0, 0, 0, 0.15); }
+  .index .header .dropdown-menu {
+    background: rgba(255, 255, 255, 0.8); }
+  .index .header .dropdown-menu > li > a:hover, .index .header .dropdown-menu > li > a:focus {
+    background-color: rgba(0, 0, 0, 0.15); }
+.index .fotorama {
+  margin-bottom: 40px; }
+
+.equipment-list .thumbnail {
+  text-align: center; }
+  .equipment-list .thumbnail img {
+    margin-bottom: 10px;
+    height: 300px;
+    width: auto; }
+
 .creativity {
   background: white;
   -o-border-radius: 4px;
@@ -1526,62 +1585,3 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 10px; }
 .residents dl dd {
   margin-left: 0; }
-
-.footer {
-  background: #663399;
-  color: white;
-  padding: 30px 0;
-  margin-top: 20px; }
-  .footer img {
-    width: 100%; }
-
-.equipment-list .thumbnail {
-  text-align: center; }
-  .equipment-list .thumbnail img {
-    margin-bottom: 10px;
-    height: 300px;
-    width: auto; }
-
-._43qm li:last-child {
-  display: none !important; }
-
-.phm pluginLikeboxStream {
-  height: 800px !important; }
-
-.flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 1170px;
-  margin: 0 auto; }
-  .flex .article {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 320px;
-    -ms-flex: 1 1 320px;
-    flex: 1 1 320px; }
-  .flex .aside {
-    -webkit-flex-basis: 355px;
-    -ms-flex-preferred-size: 355px;
-    flex-basis: 355px;
-    margin-left: 30px; }
-
-.article {
-  background: white;
-  -o-border-radius: 4px;
-  border-radius: 4px; }
-  .article img {
-    margin-bottom: 15px;
-    width: 38%; }
-    .article img.pull-left {
-      margin-right: 15px; }
-    .article img.pull-right {
-      margin-left: 15px; }
-  .article textarea {
-    resize: none; }
-
-hr {
-  border-top: 1px solid #663399; }
-
-.fotorama {
-  margin-bottom: 30px; }

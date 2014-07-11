@@ -5,6 +5,7 @@
 		<title>Фаблаб Москва</title>
 		<link href="/css/bootstrap.css" rel="stylesheet">
 		<link href="/js/vendor/fotorama/fotorama.css" rel="stylesheet">
+		<link href="/js/vendor/socials/social-likes_birman.css" rel="stylesheet">
 		<link href="/css/screen.css" rel="stylesheet">
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,6 +74,7 @@
 							</li>
 							<li><a href="http://www.thingiverse.com/search?q=fablab77" target="_blank">Проекты</a></li>
 							<li><a href="/access.html">Доступ</a></li>
+							<li><a href="https://www.facebook.com/fablab77.html" target="_blank">Новости</a></li>
 							<li><a href="/events.html">События</a></li>
 							<li><a href="/contacts.html">Контакты</a></li>
 						</ul>
@@ -123,14 +125,14 @@
 	<img src="/img/slider/06-14/35.png">
 </section>
 
-<div class="flex">
+<div class="container">
 	<article class="article">
-		<div class="top-article">
+		<section class="top-article">
 			<h2>История появления Fablab</h2>
 			<img class="pull-left" src="/img/photo/neil.jpg">
 			<p class="text-justify">
 				В&nbsp;конце прошлого века в&nbsp;одном из&nbsp;ведущих технических
-				университетов мира&nbsp;&mdash; Массачусетском технологическом институте(MIT), профессор Нил Гершенфельд с&nbsp;коллегами начал читать курс, с не&nbsp;совсем академическим названием &laquo;Как сделать (почти) все, что угодно&raquo;. В&nbsp;рамках дисциплины студентов знакомили с&nbsp;современными цифровыми производственными машинами&nbsp;&mdash; с&nbsp;их&nbsp;возможностями и ограничениями. Студентов знакомили с&nbsp;современными технологиями
+				университетов мира&nbsp;&mdash; Массачусетском технологическом институте (MIT), профессор Нил Гершенфельд с&nbsp;коллегами начал читать курс, с не&nbsp;совсем академическим названием &laquo;Как сделать (почти) все, что угодно&raquo;. В&nbsp;рамках дисциплины студентов знакомили с&nbsp;современными цифровыми производственными машинами&nbsp;&mdash; с&nbsp;их&nbsp;возможностями и ограничениями. Студентов знакомили с&nbsp;современными технологиями
 				и&nbsp;предлагали реализовывать с&nbsp;их&nbsp;помощью собственные проекты.<br>
 				Всего за&nbsp;один семестр магистранты с&nbsp;самым различным образованием
 				и&nbsp;опытом успевали освоить несколько методов обработки материалов,
@@ -147,9 +149,9 @@
 				сети лабораторий цифрового производства Fab&nbsp;Lab, которая очень
 				скоро стала глобальным международным проектом.
 			</p>	
-		</div>
+		</section>
 		<hr>
-		<div class="bottom-article">
+		<section class="bottom-article">
 			<h2>Фаблаб МИСиС&nbsp;&mdash; первый Российский фаблаб</h2>
 			<address>
 				Москва, метро Октябрьская, Крымский вал 3. Открыты: ср, чт: 11:00&nbsp;&mdash; 18:00.
@@ -178,26 +180,24 @@
 				Команда лаборатории цифрового<br> 
 				производства &laquo;ФАБЛАБ&raquo; НИТУ &laquo;МИСиС&raquo;
 			</p>
-		</div>
+		</section>
 	</article>
-	<aside class="aside">
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/ru_RU/all.js#xfbml=1";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-		<div class="fb-like-box" data-href="https://www.facebook.com/fablab77" data-width="355" data-height="1085" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>
-	</aside>
 </div>
 		</main>
-		<footer class="footer">
+		<footer class="footer ss-style-castle">
 			<div class="container">
-				<div class="text-center">
-					&laquo;ФабЛаб&raquo; &copy;&nbsp;2012<br>
-					Информация данного Интернет-сайта защищена законом об авторских правах.
+				<p>
+					&laquo;ФабЛаб&raquo; &copy;&nbsp;2012
+					&nbsp;&nbsp;&nbsp;
+					<span>Информация данного Интернет-сайта защищена законом об авторских правах.</span>
+				</p>
+				<div class="social-likes">
+					<div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+					<div class="vkontakte" title="Поделиться ссылкой во Вконтакте">Вконтакте</div>
+					<div class="odnoklassniki" title="Поделиться ссылкой в Одноклассниках">Одноклассники</div>
+					<div class="mailru" title="Поделиться ссылкой в Моём мире">Мой мир</div>
+					<div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+					<div class="pinterest" title="Поделиться картинкой на Пинтересте" data-media="http://fablab77.ru/img/photo/russian-fablab.jpg">Pinterest</div>
 				</div>
 			</div>
 		</footer>
@@ -205,6 +205,6 @@
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="/js/vendor/fotorama/fotorama.js"></script>
-	<!-- // <script src="/js/jquery.pin.js"></script> -->
+	<script src="/js/vendor/socials/social-likes.min.js"></script>
 	<script src="/js/all.js"></script>
 </html>
