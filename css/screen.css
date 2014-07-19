@@ -1580,3 +1580,7 @@ hr {
   margin-right: 10px; }
 .residents dl dd {
   margin-left: 0; }
+
+.container {
+  width: 1200px !important;
+}
