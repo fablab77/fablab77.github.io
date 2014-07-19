@@ -1584,3 +1584,6 @@ hr {
 .container {
   width: 1040px !important;
 }
+.header, .fotorama, .footer {
+  min-width: 1040px !important;
+}
