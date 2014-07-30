@@ -1602,8 +1602,11 @@ hr {
   text-align: center; }
   .equipment-list .thumbnail img {
     margin-bottom: 10px;
-    height: 300px;
     width: auto; }
+  @media (min-width: 768px) {
+    .equipment-list .thumbnail span {
+      display: block;
+      min-height: 40px; } }
 
 .creativity .image {
   width: 40%;
