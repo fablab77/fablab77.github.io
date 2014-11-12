@@ -1560,6 +1560,24 @@ hr {
 
 .fotorama {
   margin-bottom: 20px; }
+  .fotorama .expo-slide {
+    position: relative;
+  }
+  .fotorama .expo-slide img {
+    width: 100%
+  }
+  .fotorama .expo-slide a {
+    display: block;
+  }
+  .fotorama .info {
+    position: absolute;
+    top: 90px;
+    right: 10%
+  }
+   .fotorama .info h2 {
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+  }
 
 .footer {
   padding: 55px 0 30px;
