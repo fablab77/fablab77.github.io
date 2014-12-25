@@ -1654,3 +1654,9 @@ hr {
   margin-right: 10px; }
 .residents dl dd {
   margin-left: 0; }
+
+/*suenot*/
+.ctpo main img {
+    width: 50%;
+    margin: 0 auto 20px;
+    display: block; }
