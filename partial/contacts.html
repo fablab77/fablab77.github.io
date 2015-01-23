@@ -1,0 +1,105 @@
+<article class="article container">
+	<div class="content">
+		<address class="row">
+			<div class="col-sm-6">
+				<h2>Контакты</h2>
+				<h3>Мы находимся на территории МИСиС:</h3>
+				<p>г. Москва, м. Октябрьская, Крымский вал 3</p>
+				<h3>Часы работы:</h3>
+				<p>Ср&nbsp;&mdash; Чт: 11:00&nbsp;&mdash; 18:00<br>
+				Телефон: <nobr>8 (495) 955-01-20</nobr></p>
+			</div>
+			<div class="col-sm-6" ng-controller="mapController">
+				<!-- // <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=gdcMrFGswe81oTlJu1RvQuWvKtF11xao&width=100%&height=450"></script> -->
+				<ya-map ya-zoom="18" ya-center="[37.610260,55.729699]" ya-after-init="afterMapInit($target)">
+					<ya-geo-object ya-source="geoObjects[0]"></ya-geo-object>
+					<ya-geo-object ya-source="geoObjects[1]"></ya-geo-object>
+					<ya-geo-object ya-source="geoObjects[2]"></ya-geo-object>
+					<ya-geo-object ya-source="geoObjects[3]"></ya-geo-object>
+					<ya-geo-object ya-source="geoObjects[4]"></ya-geo-object>
+					<ya-geo-object ya-source="geoObjects[5]"></ya-geo-object>
+					<!-- <ya-geo-object ya-source="geoObjects[0]" ya-options="{draggable:true,strokeColor:'#FFFF00',strokeWidth: 5}"></ya-geo-object> -->
+					<!-- <ya-geo-object ya-source="geoObjects[1]" ya-options="{balloonHasCloseButton:false,strokeColor:'#000000',strokeWidth:4,strokeOpacity:0.5}"></ya-geo-object> -->
+					<!-- <ya-geo-object ya-source="geoObjects[0]"></ya-geo-object> -->
+				</ya-map>
+			</div>
+		</address>
+	</div>
+	<div class="content access">
+		<hr>
+		<h2>Доступ</h2>
+		<h3>Творческим индивидам</h3>
+		<p>
+			В голове свербит идея, руки чешутся в стремлении ее воплощения? Приходите в ФАБЛАБ. 
+		</p>
+		<p>
+			Чтобы получить доступ к работе с оборудованием необходимо пройти обучение. 
+		</p>
+		<h3>Образовательным учреждениям</h3>
+		<p>
+			Хочется добавить в образовательный процесс движения, шума фрезерного станка и запаха свежего термопласта? Хочется развить навыки командной и проектной работы? Приходите и приводите своих учащихся в ФАБЛАБ. 
+		</p>
+		<p>
+			Начните с экскурсии, оставайтесь для реализации проектов.
+		</p>
+		<h3>Малому бизнесу</h3>
+		<p>
+			У вас родилась блестящая инновационная идея, реализуемость которой требует проверки — приходите в ФАБЛАБ. 
+		</p>
+		<p>
+			У вас нет времени на самостоятельное проектирование, изготовление макета и функционального прототипа — обращайтесь к резидентам ФАБЛАБ, кто-нибудь обязательно поможет (но вряд ли безвозмездно) — напишите письмо с описанием вашего проекта на <a href="mailto:fablab@misis.ru">fablab@misis.ru</a>.
+		</p>
+		<p>
+			Как попасть в ФАБЛАБ? Пишите на <a href="mailto:fablab@misis.ru">fablab@misis.ru</a>.
+		</p>
+	</div>
+	<div class="content residents">
+		<hr>
+		<h2>Наши резиденты</h2>
+		<h3>Владимир Евгеньевич Кузнецов</h3>
+		<dl class="dl-horizontal">
+			<dt>Роль:</dt>
+			<dd>отец-основатель Фаблаба</dd>
+			<dt>Контакты:</dt>
+			<dd>
+				<a href="mailto:fablab@misis.ru">fablab@misis.ru</a>
+			</dd>
+		</dl>
+		<h3>Дмитрий Латкин</h3>
+		<dl class="dl-horizontal">
+			<dt>Роль:</dt>
+			<dd>повелитель Flexicam’а</dd>
+		</dl>
+		<h3>Антон Юдин</h3>
+		<dl class="dl-horizontal">
+			<dt>Роль:</dt>
+			<dd>чёрный маг электроники</dd>
+			<dt>Опыт работы на станках:</dt>
+			<dd>все лазерные резаки, мини-фрезер Modela MDX-20, любые работы с электроникой</dd>
+			<dt>Контакты:</dt>
+			<dd>
+				<a href="http://www.skycluster.ru">skycluster.ru</a>
+			</dd>
+		</dl>
+		<h3>Олег Уржумцев</h3>
+		<dl class="dl-horizontal">
+			<dt>Роль:</dt>
+			<dd>любитель</dd>
+			<dt>Опыт работы на станках:</dt>
+			<dd>Roland Modela MDX-20, Epilog cutter, Laserpro cutter, 3DTouch 3D printer, Replicator, любые работы с электроникой</dd>
+			<dt>Контакты:</dt>
+			<dd>
+				<a href="http://www.about.me/netbug">http://about.me/netbug</a>
+			</dd>
+		</dl>
+		<h3>Дмитрий Cухоцкий</h3>
+		<dl class="dl-horizontal">
+			<dt>Роль:</dt>
+			<dd>робототехник</dd>
+			<dt>Контакты:</dt>
+			<dd>
+				<a href="http://www.dimrobotics.ru">dimrobotics.ru</a>
+			</dd>
+		</dl>
+	</div>
+</article>

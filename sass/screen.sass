@@ -1,0 +1,492 @@
+@import compass
+@import font/awesome.scss
+@import sticky-footer
+// .container
+// 	width: 1040px !important
+// .header, .index .fotorama, .footer
+// 	min-width: 1040px !important
+
+// BASE
+
+// typography
+a
+	cursor: pointer
+h1, h2, h3, h4, h5, h6
+	margin-top: 0 !important
+h1, h2, h3, h4, h5, h6
+	@media (max-width: 480px)
+		text-align: center
+h2
+	@media (max-width: 480px)
+		font-size: 24px
+p
+	font-size: 16px
+
+li.divider
+	background-color: #999 !important
+	opacity: 0.5 !important
+
+.nowrap
+	white-space: nowrap
+
+.btn
+	@media (max-width: 480px)
+		font-size: 14px
+		width: 100%
+.btn-white
+	background: #fff
+	color: #333
+.btn-black
+	background: #333
+	color: #fff
+
+// header
+.header
+	border-bottom: 1px solid #777
+	margin-bottom: 30px
+	.navbar
+		margin-bottom: 0
+	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
+		background-color: rgba(0, 0, 0, 0.15)
+	.dropdown-menu
+		background: rgba(255, 255, 255, 0.9)
+	.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+		background-color: rgba(0, 0, 0, 0.15)
+	.search
+		margin-left: 0
+		margin-right: 0
+		border: none
+		@media (min-width: 1280px)
+			margin-left: 20px
+		input
+			padding-left: 30px !important
+		button
+			background: transparent
+			position: relative
+			left: -217px
+			top: 2px
+			border: 0
+			color: #999
+			&:focus
+				outline: none
+			@media (max-width: 767px)
+				left: 5px
+				top: -33px
+	.join-link
+		margin-left: 30px
+		float: left
+		a
+			color: #999
+			font-size: 20px
+.navbar-middle
+	@media (min-width: 768px) and (max-width: 1200px)
+		float: none !important
+.nav>li>a
+	@media (min-width: 768px) and (max-width: 1000px)
+		padding: 15px 10px
+.navbar
+	background: rgba(255, 255, 255, 0.8)
+	border: none
+	+border-radius(0px)
+	.navbar-right
+		margin-bottom: 10px
+		li
+			a
+				padding: 0 10px
+			&:last-child
+				a
+					padding-right: 0
+	img
+		+opacity(.8)
+		height: 30px
+		margin-top: 9px
+		@media (max-width: 767px)
+			margin-left: 10px
+		&:hover
+			+opacity(1)
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+	background-color: #ddd
+.fbook
+	background: #fff
+
+.article
+	background: #fff
+	+border-radius(4px)
+	img
+		margin-bottom: 15px
+		width: 38%
+		&.pull-left
+			margin-right: 15px
+		&.pull-right
+			margin-left: 15px
+	textarea
+		resize: none
+	@media (min-width: 481px) and (max-width: 800px)
+		img.pull-right, img.pull-left
+			width: 45%
+	@media (max-width: 480px)
+		img.pull-right, img.pull-left
+			float: none !important
+			margin-left: 0 !important
+			width: 100%
+
+hr
+	border-top: 1px solid #777
+	margin-top: 40px
+	margin-bottom: 40px
+
+.fotorama
+	margin-bottom: 20px
+
+// footer
+.footer
+	padding: 55px 0 30px
+	margin-top: 40px
+	background: #DEDEDE
+	position: relative
+	&::before
+		position: absolute
+		content: ''
+		pointer-events: none
+		left: 0
+		background-size: 200px 100%
+		top: 0
+		width: 100%
+		height: 29px
+		background-size: 65px 100%
+		background-image: linear-gradient(40deg, #DEDEDE 50%, #ffffff 50%)
+		background-position: 0px
+		transition: background-position 2s ease
+	&:hover
+		&::before
+			background-position: 500px
+			transition: background-position 2s ease
+
+
+// PAGES
+.main .fotorama
+	position: relative
+	top: -81px
+	z-index: -1
+	margin-bottom: -40px
+// index
+.main-page, .main-page-2
+	.header
+		position: absolute
+		z-index: 5000
+		width: 100vw
+		border-bottom: none
+		margin-bottom: 0
+		.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
+			background-color: rgba(0, 0, 0, 0.15)
+		.dropdown-menu
+			background: rgba(255, 255, 255, 0.8)
+		.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+			background-color: rgba(0, 0, 0, 0.15)
+	.fotorama
+		margin-bottom: 40px
+
+// index2.html
+.main-page-2
+	.header
+		position: absolute
+		z-index: 5000
+		width: 100vw
+		border-bottom: none
+		margin-bottom: 0
+		.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
+			background-color: rgba(0, 0, 0, 0.15)
+		.dropdown-menu
+			background: rgba(255, 255, 255, 0.8)
+		.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+			background-color: rgba(0, 0, 0, 0.15)
+	.fotorama
+		margin-bottom: 40px
+	.container
+		.flex-wrap
+			display: flex
+			margin-left: -20px
+			margin-right: -20px
+			.article
+				padding: 20px
+				margin: 0 20px 0 0
+				background: #eee
+			.news
+				flex: 1 0 300px
+				padding: 20px
+				background: #eee
+				hr
+					margin-top: 0
+					margin-bottom: 20px
+				.news-item
+					border-bottom: 1px dashed #666
+					margin-bottom: 15px
+					&:last-child
+						border-bottom: none
+					img
+						width: 100%
+						margin-bottom: 10px
+						&.pull-left
+							width: 130px
+							margin: 0 10px 0 0
+					p
+						color: #333
+						font-size: 14px
+					a:hover
+						text-decoration: none
+			@media (max-width: 599px)
+				display: block
+				.article
+					margin: 0 0 40px 0
+				.news-item
+					img
+						max-width: 300px
+			@media (max-width: 799px)
+				.news
+					flex: 1 0 220px
+
+// equipment
+.equipment-list
+	.thumbnail
+		text-align: center
+		img
+			margin-bottom: 10px
+			width: auto
+		span
+			@media (min-width: 768px)
+				display: block
+				min-height: 40px
+
+// creativity
+.creativity
+	// background: #fff
+	// +border-radius(4px)
+	// padding: 10px 20px
+	.image
+		width: 40%
+		margin-left: 20px
+		img
+			margin-bottom: 5px
+			width: 100%
+	h2
+		margin-bottom: 20px
+	@media (min-width: 481px) and (max-width: 800px)
+		.image
+			width: 45%
+			p
+				font-size: 12px
+		.media-body
+			overflow: visible
+	@media (max-width: 480px)
+		.image
+			float: none !important
+			margin-left: 0
+			width: 100%
+			p
+				font-size: 12px
+
+//catalog
+.catalog-page, .signin-page, .signup-page
+	.header
+		.link-signin
+			display: block
+		.link-account
+			display: none
+.welcome-page
+	header
+		.link-account
+			display: block
+			background: #eee
+		.link-signin
+			display: none
+.catalog-page, .signin-page, .signup-page, .welcome-page, .explore-page
+	.header
+		margin-bottom: 50px
+		.navbar.navbar-base
+			display: none !important
+		.navbar-catalog
+			display: block !important
+			visibility: visible !important
+
+.gallery-item
+	position: relative
+	+border-radius(4px)
+	img
+		width: 100%
+	.gallery-text
+		position: absolute
+		top: 0
+		width: 100%
+		color: #fff
+		padding: 10px
+		width: 100%
+		td
+			padding: 10px
+			vertical-align: top
+			&.photo
+				width: 50px
+			img
+				width: 50px
+				height: 50px
+				+border-radius(50%)
+				border: 2px solid #fff
+			p
+				font-size: 14px
+			span
+				font-size: 12px
+	.table
+		td
+			text-align: center
+			border: 1px solid #ddd
+			a
+				color: #999
+				display: block
+				&:hover
+					color: #333
+					text-decoration: none
+.catalog
+	section
+		margin-bottom: 20px
+	.bg-grey
+		background: #eee
+		border: 1px solid #ddd
+	.header-block
+		padding: 10px
+		p
+			color: #666
+			margin-bottom: 0
+		a.pull-right
+			color: #999
+			&:hover
+				text-decoration: none
+				color: #666
+	//fotorama custom style
+	.fotorama__wrap *
+		box-sizing: border-box
+		.fotorama__nav__frame .fotorama__dot
+			width: 10px
+			height: 10px
+
+	.top-slider
+		.slider-item
+			background: #333
+			@media (min-width: 768px)
+				height: 100%
+			.slider-img
+				height: 100%
+				float: left
+				@media (max-width: 991px)
+					width: 60%
+			.slider-text
+				@media (min-width: 768px)
+					height: 100%
+				td
+					vertical-align: middle
+					padding: 15px
+					color: #fff
+					@media (max-width: 991px)
+						h1
+							font-size: 25px !important
+					hr
+						border: 1px solid #fff
+						margin: 20px 0
+					p
+						margin-bottom: 20px
+						@media (max-width: 991px)
+							font-size: 14px
+	.features
+		.flex-wrap
+			display: flex
+			@media (max-width: 991px)
+				display: block
+			h3
+				text-align: left !important
+			.aside-left
+				flex: 0 0 300px
+				margin-right: 20px
+				@media (max-width: 991px)
+					margin: 0 0 20px
+				.gfeed-block
+					a
+						display: block
+						padding: 10px
+						border-top: 1px solid #ddd
+						font-size: 14px
+						color: #333
+						img
+							width: 50px
+							height: 50px
+							+border-radius(4px)
+							margin-right: 20px
+						&:hover
+							background: #fff
+							text-decoration: none
+			.collection
+				flex: 1
+				.featured
+					a.pull-right
+						i
+							font-weight: bold
+							margin-left: 3px
+							vertical-align: middle
+							line-height: 13px
+						@media (max-width: 991px)
+							float: none !important
+							display: block
+							text-align: right
+					.featured-gallery
+						padding: 10px
+						a
+							color: #333
+							img
+								width: 90%
+								max-width: 300px
+								+border-radius(4px)
+	.made, .creations
+		.header-block
+			border-bottom: none
+		.fotorama
+			.list-slider
+				// padding: 20px 0
+				border-top: none
+				.gallery-item
+					margin: 0 20px
+
+.sign-in
+	form
+		margin: 0 auto
+		max-width: 700px
+		h3
+			color: #777
+.sign-up
+	form
+		margin: 0 auto
+		max-width: 700px
+		label.control-label
+			text-align: left
+
+.explore
+	.explore-title
+		margin-bottom: 20px
+		span
+			color: #777
+			margin-left: 10px
+
+//residents
+.residents
+	dl
+		dt
+			width: auto
+			margin-right: 10px
+		dd
+			margin-left: 0
+
+ya-map
+	height: 240px !important
+	width: 100% !important
+	display: block !important
+
+.ctpo.article img
+	width: 50%
+	margin: 0 auto 20px
+	display: block

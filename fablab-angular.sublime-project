@@ -1,0 +1,73 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\fablab77.github.io"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\angular-phonecat"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\room-media"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\Dropbox\\work\\quoin"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\room"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\shop.de-core.net"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\tests\\yeoman"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\tests\\test3"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\tests\\test4"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\Docs"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\tools\\vagrant-nvm"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\tests\\test5"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\fablab-material"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\backup\\config"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\backup\\livestreet"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\suenot\\work\\optimist"
+		}
+	]
+}
