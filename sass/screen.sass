@@ -1,9 +1,5 @@
 @import font/awesome.scss
 @import sticky-footer
-// .container
-// 	width: 1040px !important
-// .header, .index .fotorama, .footer
-// 	min-width: 1040px !important
 
 // BASE
 
@@ -43,6 +39,8 @@ li.divider
 .header
 	border-bottom: 1px solid #777
 	margin-bottom: 30px
+	position: relative
+	z-index: 8000
 	.navbar
 		margin-bottom: 0
 	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
@@ -483,4 +481,9 @@ ya-map
 .ctpo.article img
 	width: 50%
 	margin: 0 auto 20px
+	display: block
+
+ya-map
+	width: 100%
+	height: 400px
 	display: block
