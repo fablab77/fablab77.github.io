@@ -1,4 +1,3 @@
-@import compass
 @import font/awesome.scss
 @import sticky-footer
 // .container
@@ -87,7 +86,7 @@ li.divider
 .navbar
 	background: rgba(255, 255, 255, 0.8)
 	border: none
-	+border-radius(0px)
+	border-radius: 0px
 	.navbar-right
 		margin-bottom: 10px
 		li
@@ -97,13 +96,13 @@ li.divider
 				a
 					padding-right: 0
 	img
-		+opacity(.8)
+		opacity: .8
 		height: 30px
 		margin-top: 9px
 		@media (max-width: 767px)
 			margin-left: 10px
 		&:hover
-			+opacity(1)
+			opacity: 1
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
 	background-color: #ddd
 .fbook
@@ -111,7 +110,7 @@ li.divider
 
 .article
 	background: #fff
-	+border-radius(4px)
+	border-radius: 4px
 	img
 		margin-bottom: 15px
 		width: 38%
@@ -167,10 +166,9 @@ hr
 .main .fotorama
 	position: relative
 	top: -81px
-	z-index: -1
 	margin-bottom: -40px
 // index
-.main-page, .main-page-2
+.main, .main-page, .main-page-2
 	.header
 		position: absolute
 		z-index: 5000
@@ -259,9 +257,6 @@ hr
 
 // creativity
 .creativity
-	// background: #fff
-	// +border-radius(4px)
-	// padding: 10px 20px
 	.image
 		width: 40%
 		margin-left: 20px
@@ -310,7 +305,7 @@ hr
 
 .gallery-item
 	position: relative
-	+border-radius(4px)
+	border-radius: 4px
 	img
 		width: 100%
 	.gallery-text
@@ -328,7 +323,7 @@ hr
 			img
 				width: 50px
 				height: 50px
-				+border-radius(50%)
+				border-radius: 50%
 				border: 2px solid #fff
 			p
 				font-size: 14px
@@ -416,7 +411,7 @@ hr
 						img
 							width: 50px
 							height: 50px
-							+border-radius(4px)
+							border-radius: 4px
 							margin-right: 20px
 						&:hover
 							background: #fff
@@ -441,13 +436,12 @@ hr
 							img
 								width: 90%
 								max-width: 300px
-								+border-radius(4px)
+								border-radius: 4px
 	.made, .creations
 		.header-block
 			border-bottom: none
 		.fotorama
 			.list-slider
-				// padding: 20px 0
 				border-top: none
 				.gallery-item
 					margin: 0 20px
