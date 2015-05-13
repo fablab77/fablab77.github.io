@@ -17,15 +17,15 @@
 		<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
 		<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.3";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 	</head>
 	<body class="{{location.path().replace('/', ' ').replace('/', ' ')}}">
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.3";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
 		<ng-include src="'include/header.html'"></ng-include>
 		<main analytics role="main" ng-view></main>
 		<ng-include src="'include/footer.html'"></ng-include>
@@ -43,6 +43,5 @@
 		<script src="js/vendor/fotorama/fotorama.js"></script>
 		<script src="js/vendor/socials/social-likes.min.js"></script>
 		<div id="fb-root"></div>
-
 	</body>
 </html>
