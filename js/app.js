@@ -41,6 +41,7 @@ app.config(function($routeProvider) {
     when('/event', { templateUrl:'partial/events.html'}).
     when('/contacts', { templateUrl:'partial/contacts.html'}).
     when('/equipment', { templateUrl:'partial/equipment.html'}).
+    when('/links', { templateUrl:'partial/links.html'}).
     when('/equipment/dimention-elite', { templateUrl:'partial/equipment/dimention-elite.html'}).
     when('/equipment/3dtouch-3d-printer', { templateUrl:'partial/equipment/3dtouch-3d-printer.html'}).
     when('/equipment/replicator', { templateUrl:'partial/equipment/replicator.html'}).
