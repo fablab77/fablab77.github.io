@@ -25,6 +25,7 @@ app.config(function($routeProvider) {
     when('/fablab/wherefrom', { templateUrl:'partial/fablab/wherefrom.html'}).
     when('/fablab/charter', { templateUrl:'partial/fablab/charter.html'}).
     when('/fablab/network', { templateUrl:'partial/fablab/network.html'}).
+    when('/fablab/team', { templateUrl:'partial/fablab/team.html'}).
     when('/creativity', { templateUrl:'partial/creativity.html'}).
     when('/creativity/2d', { templateUrl:'partial/creativity/2d.html'}).
     when('/creativity/3d', { templateUrl:'partial/creativity/3d.html'}).
