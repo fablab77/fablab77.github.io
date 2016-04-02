@@ -76,11 +76,32 @@ li.divider
 			color: #999
 			font-size: 20px
 .navbar-middle
-	@media (min-width: 768px) and (max-width: 1200px)
+	@media (min-width: 768px) and (max-width: 1199px)
 		float: none !important
+
+@media (min-width: 768px) and (max-width: 1199px)
+	.navbar-header
+		float: none !important
+	.navbar-toggle
+		display: block !important
+@media (min-width: 1280px)
+	.navbar-toggle
+		display: none !important
+	.navbar-header
+		float: left !important
+
+
 .nav>li>a
-	@media (min-width: 768px) and (max-width: 1000px)
-		padding: 15px 10px
+	padding: 15px 12px
+
+.navbar-collapse.collapse
+	display: none !important
+	@media (min-width: 1200px)
+		display: block !important;
+		height: auto !important;
+		padding-bottom: 0;
+		overflow: visible !important;
+
 .navbar
 	background: rgba(255, 255, 255, 0.8)
 	border: none
