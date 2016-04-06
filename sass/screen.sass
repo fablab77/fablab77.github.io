@@ -1,11 +1,25 @@
 @import font/awesome.scss
 @import sticky-footer
 
+// Fablab colors
+$blue: #35469D
+$green: #0E9A48
+$red: #CB2026
+.blue
+	color: $blue
+.green
+	color: $green
+.red
+	color: $red
+
 // BASE
 
 // typography
 a
 	cursor: pointer
+	color: $blue
+	&:hover
+		color: darken($blue, 10%)
 h1, h2, h3, h4, h5, h6
 	margin-top: 0 !important
 h1, h2, h3, h4, h5, h6
@@ -79,6 +93,10 @@ li.divider
 	@media (min-width: 768px) and (max-width: 1199px)
 		float: none !important
 
+.navbar-toggle
+	margin: 0
+	padding: 17px 18px
+	border-radius: 0
 @media (min-width: 768px) and (max-width: 1199px)
 	.navbar-header
 		float: none !important
@@ -203,7 +221,74 @@ hr
 		&::before
 			background-position: 500px
 			transition: background-position 2s ease
+	.sections
+		display: block
+		@media (min-width: 993px)
+			display: flex
+			justify-content: space-between
+		.section
+			flex: 1 1 auto
+			@media (max-width: 992px)
+				display: block
+				width: 100%
+			h4 a
+				color: black
+				text-decoration: underline
 
+			ul
+				list-style: none
+				margin-left: 0
+				padding-left: 0
+				margin-bottom: 0
+				li a
+					line-height: 24px
+					font-size: 16px
+			&.fablab
+				@media (min-width: 993px)
+					flex-direction: column
+					display: flex
+				.info
+					@media (min-width: 993px)
+						flex: 1 0 auto
+						display: flex
+						flex-direction: column
+						justify-content: flex-end
+					.socials
+						list-style: none
+						margin-top: 30px
+						li
+							display: inline-block
+							margin-right: 5px
+							.isvg
+								svg
+									width: 30px
+									height: 30px
+									path
+										fill: black !important
+									&:hover
+										path
+											fill: $blue !important
+					.copyright
+						@media (min-width: 993px)
+							max-width: 250px
+							margin: 0
+			&.creativity
+				@media (min-width: 993px)
+					flex: none
+					flex-direction: column
+					display: flex
+				.places
+					margin-top: 30px
+					@media (min-width: 993px)
+						flex: 1 0 auto
+						display: flex
+						flex-direction: column
+						justify-content: space-between
+					li+li
+						margin-top: 10px
+					img
+						max-width: 250px
+						max-height: 150px
 
 // PAGES
 .main .fotorama
