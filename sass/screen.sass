@@ -5,6 +5,8 @@
 $blue: #35469D
 $green: #0E9A48
 $red: #CB2026
+$footer1: rgb(224, 234, 252)
+$footer2: rgb(207, 222, 243)
 .blue
 	color: $blue
 .green
@@ -157,7 +159,7 @@ li.divider
 				a
 					padding-right: 0
 	img
-		opacity: .8
+		opacity: .6
 		height: 30px
 		margin-top: 9px
 		@media (max-width: 767px)
@@ -202,7 +204,7 @@ hr
 .footer
 	padding: 55px 0 30px
 	margin-top: 40px
-	background: #DEDEDE
+	background: linear-gradient(to bottom, $footer2, $footer1)
 	position: relative
 	&::before
 		position: absolute
@@ -214,7 +216,7 @@ hr
 		width: 100%
 		height: 29px
 		background-size: 65px 100%
-		background-image: linear-gradient(40deg, #DEDEDE 50%, #ffffff 50%)
+		background-image: linear-gradient(40deg, $footer2 50%, #ffffff 50%)
 		background-position: 0px
 		transition: background-position 2s ease
 	&:hover
@@ -277,8 +279,12 @@ hr
 					flex: none
 					flex-direction: column
 					display: flex
+				.list
+					flex: 1 0 auto
 				.places
+					flex: 0 0 auto !important
 					margin-top: 30px
+					margin-bottom: 30px
 					@media (min-width: 993px)
 						flex: 1 0 auto
 						display: flex
@@ -286,9 +292,20 @@ hr
 						justify-content: space-between
 					li+li
 						margin-top: 10px
-					img
-						max-width: 250px
-						max-height: 150px
+					a
+						opacity: .6
+						&:hover
+							opacity: 1
+						img
+							max-width: 150px
+							max-height: 150px
+				#mc-embedded-subscribe-form
+					label
+						font-size: 15px
+					.email
+						margin-bottom: 7px
+					.btn
+						width: 100%
 
 // PAGES
 .main .fotorama
