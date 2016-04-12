@@ -48,7 +48,5 @@ app_d.directive('socialLikes', function($window){
 
 app_d.directive('body', function($window){
 	return function(scope, element, attrs){
-			console.log('test');
-			console.log( $(location).attr('href') );
 	};
 });
