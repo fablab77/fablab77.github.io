@@ -1,16 +1,23 @@
-<article class="article container">
+<article itemscope itemtype="http://schema.org/Organization" class="article container">
 	<div class="content">
 		<address class="row">
 			<div class="col-sm-6">
+				<meta itemprop="name" content="Фаблаб МИСиС">
 				<h2>Контакты</h2>
 				<h3>Мы находимся на территории Национального исследовательского технологического университета "МИСиС":</h3>
-				<p>г. Москва, м. Октябрьская, Крымский вал, д. 3</p>
+				<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					г. <span itemprop="addressLocality">Москва</span>, <span itemprop="streetAddress">м. Октябрьская, Крымский вал, д. 3</span>
+				</p>
 				<h3>Часы работы:</h3>
-				<p>Ср&nbsp;&mdash; Чт: 11:00&nbsp;&mdash; 18:00<br>
-				Телефон: <nobr>8 (495) 955-01-20</nobr></p>
+				<p itemprop="openingHours" datetime="We,Th 11:00−18:00">Ср&nbsp;&mdash; Чт: 11:00&nbsp;&mdash; 18:00<br>
+				Телефон: <nobr itemprop="telephone">+7 (495) 955-01-20</nobr></p>
 			</div>
 			<div class="col-sm-6" ng-controller="mapController">
 				<!-- // <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=gdcMrFGswe81oTlJu1RvQuWvKtF11xao&width=100%&height=450"></script> -->
+				<div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+					<meta itemprop="latitude" content="55.730095">
+					<meta itemprop="longitude" content="37.609207">
+				</div>
 				<ya-map ya-zoom="18" ya-center="[37.610260,55.729699]" ya-after-init="afterMapInit($target)">
 					<ya-geo-object ya-source="geoObjects[0]"></ya-geo-object>
 					<ya-geo-object ya-source="geoObjects[1]"></ya-geo-object>
@@ -50,7 +57,7 @@
 			У вас нет времени на самостоятельное проектирование, изготовление макета и функционального прототипа — обращайтесь к резидентам ФАБЛАБ, кто-нибудь обязательно поможет (но вряд ли безвозмездно) — напишите письмо с описанием вашего проекта на <a href="mailto:fablab@misis.ru">fablab@misis.ru</a>.
 		</p>
 		<p>
-			Как попасть в ФАБЛАБ? Пишите на <a href="mailto:fablab@misis.ru">fablab@misis.ru</a>.
+			Как попасть в ФАБЛАБ? Пишите на <a href="mailto:fablab@misis.ru" itemprop="email">fablab@misis.ru</a>.
 		</p>
 	</div>
 
