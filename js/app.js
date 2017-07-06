@@ -38,6 +38,7 @@ app.config(function($routeProvider) {
     when('/sign-in', { templateUrl:'partial/sign-in.html'}).
     when('/sign-up', { templateUrl:'partial/sign-up.html'}).
     when('/ctpo', { templateUrl:'partial/ctpo.html'}).
+    when('/master', { templateUrl:'partial/master.html'}).
     when('/event', { templateUrl:'partial/events.html'}).
     when('/contacts', { templateUrl:'partial/contacts.html'}).
     when('/equipment', { templateUrl:'partial/equipment.html'}).
