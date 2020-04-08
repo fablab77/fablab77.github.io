@@ -64,5 +64,6 @@ app.config(function($routeProvider) {
     when('/equipment/thermostatic-basin', { templateUrl:'partial/equipment/thermostatic-basin.html'}).
     when('/equipment/grinder', { templateUrl:'partial/equipment/grinder.html'}).
     when('/equipment/3d-protos', { templateUrl:'partial/equipment/3d-protos.html'}).
+    when('/equipment/trotec', { templateUrl:'partial/equipment/trotec.html'}).
     otherwise({redirectTo:'/'});
 });
