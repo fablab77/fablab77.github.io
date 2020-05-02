@@ -40,6 +40,7 @@ app.config(function($routeProvider) {
     when('/ctpo', { templateUrl:'partial/ctpo.html'}).
     when('/master', { templateUrl:'partial/master.html'}).
     when('/event', { templateUrl:'partial/events.html'}).
+    when('/covid', { templateUrl:'partial/covid.html'}).
     when('/contacts', { templateUrl:'partial/contacts.html'}).
     when('/equipment', { templateUrl:'partial/equipment.html'}).
     when('/links', { templateUrl:'partial/links.html'}).
